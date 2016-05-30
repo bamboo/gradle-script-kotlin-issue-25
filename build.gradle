@@ -1,0 +1,13 @@
+buildscript {
+    ext.kotlinVersion = '1.1.0-dev-372'
+    repositories {
+        maven {
+            url 'https://repo.gradle.org/gradle/repo'
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+apply from: 'build.gradle.kts'
